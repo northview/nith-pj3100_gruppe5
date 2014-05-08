@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/loginField_brukernavn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="@string/loginField_username"
+        android:inputType="text|textEmailAddress"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:textColor="@color/black" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/loginField_passord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginField_brukernavn"
+        android:layout_below="@+id/loginField_brukernavn"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:hint="@string/loginField_password" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginField_passord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/ndblue"
+        android:textColor="@color/white"
+        android:text="@string/login_button" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/loginField_brukernavn"
+        android:layout_alignLeft="@+id/loginField_brukernavn"
+        android:layout_marginBottom="50dp"
+        android:text="@string/brukernavn"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/loginField_passord"
+        android:layout_alignLeft="@+id/loginField_passord"
+        android:layout_marginBottom="50dp"
+        android:text="@string/passord"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="NattOgDagLogo"
+        android:src="@drawable/favikon_logo" />
+
+    <TextView
+        android:id="@+id/forgot_uname_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/forgot_uname_pw"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

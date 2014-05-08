@@ -1,0 +1,489 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.5
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.5.138.130:3306
+-- Generation Time: Mar 04, 2014 at 02:41 PM
+-- Server version: 5.1.73
+-- PHP Version: 5.3.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `nattogdagprosjekt`
+--
+CREATE DATABASE IF NOT EXISTS `nattogdagprosjekt` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `nattogdagprosjekt`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `avisrute`
+--
+
+CREATE TABLE IF NOT EXISTS `avisrute` (
+  `avisrutenummer` int(6) NOT NULL,
+  PRIMARY KEY (`avisrutenummer`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `avisrute`
+--
+
+INSERT INTO `avisrute` (`avisrutenummer`) VALUES
+(1),
+(2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `avisrutestopp`
+--
+
+CREATE TABLE IF NOT EXISTS `avisrutestopp` (
+  `avisrutestopp_id` int(11) NOT NULL AUTO_INCREMENT,
+  `avisrutenummer` int(6) DEFAULT NULL,
+  `stoppnummer` smallint(4) DEFAULT NULL,
+  `distribusjonspunkt_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`avisrutestopp_id`),
+  KEY `avisrutenummer` (`avisrutenummer`),
+  KEY `distribusjonspunkt_id` (`distribusjonspunkt_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `avisrutestopp`
+--
+
+INSERT INTO `avisrutestopp` (`avisrutestopp_id`, `avisrutenummer`, `stoppnummer`, `distribusjonspunkt_id`) VALUES
+(1, 1, NULL, 271),
+(2, 1, NULL, 269),
+(3, 1, NULL, 200),
+(4, 1, NULL, 258),
+(5, 1, NULL, 268),
+(6, 1, NULL, 255),
+(7, 1, NULL, 256),
+(8, 1, NULL, 270);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bruker`
+--
+
+CREATE TABLE IF NOT EXISTS `bruker` (
+  `bruker_id` int(11) NOT NULL AUTO_INCREMENT,
+  `brukernavn` varchar(50) NOT NULL,
+  `passord` varchar(255) NOT NULL,
+  `navn` varchar(50) DEFAULT NULL,
+  `telefonnummer` int(10) DEFAULT NULL,
+  `rolle` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`bruker_id`),
+  KEY `rolle` (`rolle`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `bruker`
+--
+
+INSERT INTO `bruker` (`bruker_id`, `brukernavn`, `passord`, `navn`, `telefonnummer`, `rolle`) VALUES
+(2, 'petter85', '$2a$12$7opw8ws/cnlYo/xe7dWS4uDkJ7kLYeTqvibmJYPae3ZwHpVF74ow6', 'Petter Hansen', 80065478, 'bruker'),
+(3, 'frode88', '$2a$12$2axAUwe/L6sQzXryu/sqb.WvnIjQNo4Chv044OKbPpOwwynFUt2WG', 'Frode Nilsen', 78068678, 'bruker');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bruker_avisrute`
+--
+
+CREATE TABLE IF NOT EXISTS `bruker_avisrute` (
+  `avisrutenummer` int(6) NOT NULL DEFAULT '0',
+  `bruker_id` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`avisrutenummer`,`bruker_id`),
+  KEY `bruker_id` (`bruker_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `bruker_avisrute`
+--
+
+INSERT INTO `bruker_avisrute` (`avisrutenummer`, `bruker_id`) VALUES
+(1, 2),
+(2, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `distribusjon`
+--
+
+CREATE TABLE IF NOT EXISTS `distribusjon` (
+  `distribusjon_id` int(11) NOT NULL AUTO_INCREMENT,
+  `nummer` varchar(50) DEFAULT NULL,
+  `distribusjonspunkt_id` int(11) NOT NULL,
+  `antall_gjenvaerende` int(5) DEFAULT NULL,
+  `antall_pafyllt` int(5) DEFAULT NULL,
+  `antall_distribuert` int(5) DEFAULT NULL,
+  `tidspunkt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `bruker_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`distribusjon_id`),
+  KEY `distribusjonspunkt_id` (`distribusjonspunkt_id`),
+  KEY `bruker_id` (`bruker_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `distribusjonspunkt`
+--
+
+CREATE TABLE IF NOT EXISTS `distribusjonspunkt` (
+  `distribusjonspunkt_id` int(11) NOT NULL AUTO_INCREMENT,
+  `adresse` varchar(255) DEFAULT NULL,
+  `postnummer` int(4) DEFAULT NULL,
+  `bynavn` varchar(50) DEFAULT NULL,
+  `latitude` decimal(10,8) DEFAULT NULL,
+  `longitude` decimal(10,8) DEFAULT NULL,
+  `navn` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`distribusjonspunkt_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=285 ;
+
+--
+-- Dumping data for table `distribusjonspunkt`
+--
+
+INSERT INTO `distribusjonspunkt` (`distribusjonspunkt_id`, `adresse`, `postnummer`, `bynavn`, `latitude`, `longitude`, `navn`) VALUES
+(1, 'Stortingsgata 14', NULL, 'Oslo', '59.91354800', '10.73636800', 'Ferner Jacobsen'),
+(2, 'Skovveien 4', NULL, 'Oslo', '59.91583300', '10.71566100', 'Hassan og Den Dama'),
+(3, 'Fridtjof Nansens vei 8', NULL, 'Oslo', '59.92974500', '10.71048000', 'Colosseum Kino'),
+(4, 'Olav V''s gate 4', NULL, 'Oslo', '59.91342200', '10.73280700', 'Klingenberg Kino'),
+(5, 'Marioboes gate 7', NULL, 'Oslo', '59.91654600', '10.75045200', 'Arakataka'),
+(6, 'Bryggetorget 14', NULL, 'Oslo', '59.90993900', '10.72521000', 'Beach Club'),
+(7, 'Grønlandsleiret 15', NULL, 'Oslo', '59.91237600', '10.76443700', 'Olympen Mat&Vinhus'),
+(8, 'Thorvald Meyers gate 26', NULL, 'Oslo', '59.92765400', '10.75916400', 'Sult'),
+(9, 'Thorvald Meyersgate 32', NULL, 'Oslo', '59.92479300', '10.75920600', 'Aku Aku'),
+(10, 'Brenneriveien 9c', NULL, 'Oslo', '59.92076100', '10.75308700', 'Blå'),
+(11, 'Grønland 10', NULL, 'Oslo', '59.91312000', '10.76022700', 'Dattera til Hagen'),
+(12, 'Youngstorget', NULL, 'Oslo', '59.91468400', '10.74961400', 'Internasjonalen'),
+(13, 'Tøyenbekken 34', NULL, 'Oslo', '59.91137300', '10.76177500', 'Oslo Mekaniske Verksted'),
+(14, 'Torggata 16', NULL, 'Oslo', '59.91581700', '10.75104800', 'Big Dipper'),
+(15, 'Torggata 16', NULL, 'Oslo', '59.91582500', '10.75103400', 'Rockefeller'),
+(16, 'Thorvald Meyers gate 40A', NULL, 'Oslo', '59.92375900', '10.75923500', 'Fru Hagen'),
+(17, 'Sannergata 6', NULL, 'Oslo', '59.92854300', '10.76160400', 'Ringen kino'),
+(18, 'Slemdalsveien 7,0369', NULL, 'Oslo', '59.93143500', '10.71331600', 'BokCaféen (Chateau Neuf)'),
+(19, 'Slemdalsveien 7,0369', NULL, 'Oslo', '59.93143500', '10.71331600', 'Chateau Neuf'),
+(20, 'Problemveien 11,0313', NULL, 'Oslo', '59.94075800', '10.72157400', 'Blindern Fredrikke Bygget 3 stativ'),
+(21, 'Bogstadveien 66A,0366', NULL, 'Oslo', '59.92871500', '10.71586400', 'Gamle Major'),
+(22, 'Bogstadveien 64A,0366', NULL, 'Oslo', '59.92861900', '10.71617700', 'Jacob Aal'),
+(23, 'Bogstadveien 49,0366', NULL, 'Oslo', '59.92853900', '10.71647300', 'Sunpoint'),
+(24, 'Bogstadveien 54,0366', NULL, 'Oslo', '59.92803200', '10.71824800', 'Baker Hansen'),
+(25, 'Valkyriegata 9,0366', NULL, 'Oslo', '59.92872600', '10.71752800', 'Café M'),
+(26, 'Bogstadveien 40A,0366', NULL, 'Oslo', '59.92715100', '10.72008000', 'Platekompaniet (bogstaveien)'),
+(27, 'Bogstadveien 31A,0366', NULL, 'Oslo', '59.92682600', '10.72060500', 'Spagetti'),
+(28, 'Bogstadveien 27,0355', NULL, 'Oslo', '59.92628900', '10.72147700', 'The Broker'),
+(29, 'Bogstadveien 22,0355', NULL, 'Oslo', '59.92568200', '10.72243100', 'Carlings (bogstadveien) 2'),
+(30, 'Sporveisgata 35A,0354', NULL, 'Oslo', '59.92513300', '10.72549700', 'San Leandro (Sporveisgata)'),
+(31, 'Bogstadveien 41A,0366', NULL, 'Oslo', '59.92735300', '10.71976500', 'Studion Alf'),
+(32, 'Parkveien 25,0350', NULL, 'Oslo', '59.92074600', '10.72853600', 'Bjørungs'),
+(33, 'Hegdehaugsveien 24,0352', NULL, 'Oslo', '59.92115000', '10.72765800', 'Horgans'),
+(34, 'Parkveien 12,0350', NULL, 'Oslo', '59.92163500', '10.73028300', 'Lorrys'),
+(35, 'Valkyriegata 3,0366', NULL, 'Oslo', '59.92816200', '10.71844900', 'Kaffebrenneriet (Majorstuen)'),
+(36, 'Hegdehaugsveien 22B,0167', NULL, 'Oslo', '59.92058600', '10.72933200', 'rust'),
+(37, 'Hegdehaugsveien 22', NULL, 'Oslo', '59.92057800', '10.72932700', 'Plah'),
+(38, 'Kristian IV''s gate 7,0164', NULL, 'Oslo', '59.91497400', '10.73991200', 'Elsker'),
+(39, 'Universitetsgata 20,0162', NULL, 'Oslo', '59.91555800', '10.73732100', 'Tex Burger'),
+(40, 'Kronprinsens gate 5,0251', NULL, 'Oslo', '59.91439800', '10.72768000', 'Harry''s'),
+(41, 'Akersgata 35,0158', NULL, 'Oslo', '59.91315100', '10.74145400', 'Akersgata 35,0158 Oslo'),
+(42, 'Grensen 17,0159', NULL, 'Oslo', '59.91424200', '10.74235300', 'Utro Grensen'),
+(43, 'Rosenkrantz gate 10,0159', NULL, 'Oslo', '59.91428800', '10.73934600', 'Oslo Nye'),
+(44, 'Akersgata 55,0180', NULL, 'Oslo', '59.91497400', '10.74374700', 'Stopp Pressen'),
+(45, 'Karl Johans gate 12A,0154', NULL, 'Oslo', '59.91206700', '10.74571100', 'Carlings Karl Johan'),
+(46, 'Nedre slottsgate 12,0157', NULL, 'Oslo', '59.91291800', '10.74348800', 'Carlings Megastore'),
+(47, 'Tullins gate 2,0166', NULL, 'Oslo', '59.91894100', '10.73458800', 'Tullins'),
+(48, 'Rosenkrantz gate 1,0159', NULL, 'Oslo', '59.91447800', '10.73955500', 'Juristen'),
+(49, 'Pilestredet 31,0166', NULL, 'Oslo', '59.91872800', '10.73682700', 'Le Meo Sushi'),
+(50, 'Hegdehaugsveien 2,0167', NULL, 'Oslo', '59.92056700', '10.73353600', 'Curry House'),
+(51, 'Pilestredet 51 b,0350', NULL, 'Oslo', '59.92170700', '10.73213500', 'Bislet Kebab avd. Pilestredet'),
+(52, 'Mauritz Hansens gate 5,0350', NULL, 'Oslo', '59.92161200', '10.73215600', 'Balkan'),
+(53, 'Pilestredet 56,0167', NULL, 'Oslo', '59.92338200', '10.73169600', 'Sonans Privatgymnas'),
+(54, 'Thereses gate 51B,0354', NULL, 'Oslo', '59.92596100', '10.73106900', 'Store Stå'),
+(55, 'Thereses gate 47A,0354', NULL, 'Oslo', '59.92631900', '10.73126200', 'Nero'),
+(56, 'Thereses gate 47A,0354', NULL, 'Oslo', '59.92643700', '10.73109400', 'kims'),
+(57, 'Thereses gate 33A,0354', NULL, 'Oslo', '59.92765400', '10.73197900', 'Godt Brød (Bislett)'),
+(58, 'Thereses gate 36,0168', NULL, 'Oslo', '59.92776500', '10.73219500', 'Bislet Video'),
+(59, 'Nydalsveien 37, 0484', NULL, 'Oslo', '59.94881400', '10.76672300', 'BI'),
+(60, 'Nydalsveien 33, 0484', NULL, 'Oslo', '59.94887200', '10.76745000', 'Godt Brød (Nydalen)'),
+(61, 'Vitaminveien 11b 0485', NULL, 'Oslo', '59.94689600', '10.77253500', 'Pizza og Kinaekspressen'),
+(62, 'Åsengata 42 - 0480', NULL, 'Oslo', '59.93940400', '10.77383200', 'Åpent Bakeri'),
+(63, 'Vogts gate 68,0477', NULL, 'Oslo', '59.93676400', '10.76656700', 'Never Mind Sushi'),
+(64, 'Vogts gate 70A,0477', NULL, 'Oslo', '59.93681300', '10.76661400', 'Hair Craft'),
+(65, 'Vogts gate 58,0477', NULL, 'Oslo', '59.93572200', '10.76560900', 'Kaffegutta'),
+(66, 'Vogts gate 50A,0477', NULL, 'Oslo', '59.93479200', '10.76473100', 'Dolly Dimples'),
+(67, 'Vogts gate 50A,0477', NULL, 'Oslo', '59.93479200', '10.76473100', 'Kaffebrenneriet (Torshov)'),
+(68, 'Torshovgata 1A,0476', NULL, 'Oslo', '59.93418900', '10.76215100', 'Black Gold'),
+(69, 'Torshovgata 15A', NULL, 'Oslo', '59.93328500', '10.76739400', 'Mr Pizza'),
+(70, 'Torshovgata 33', NULL, 'Oslo', '59.93315100', '10.76806100', 'Trikkestallen'),
+(71, 'Waldemar thranes gate 73,0175', NULL, 'Oslo', '59.92823000', '10.75303800', 'Ila SATS'),
+(72, 'Schleppegrells gate 16A,0556', NULL, 'Oslo', '59.92721600', '10.76130600', 'Scorpius'),
+(73, 'Toftes gate 30,0556', NULL, 'Oslo', '59.92707400', '10.76113800', 'Naboens Pub'),
+(74, 'Toftes gate 50B,0556', NULL, 'Oslo', '59.92571600', '10.76116000', 'Kafe Tamara'),
+(75, 'Thorvald Meyers gate 25A,0555', NULL, 'Oslo', '59.92707100', '10.75916000', 'La Famiglia'),
+(76, 'Thorvald Meyers gate 23A,0555', NULL, 'Oslo', '59.92729200', '10.75915900', 'Noahs Ark'),
+(77, 'Thorvald Meyers gate 33A,0555', NULL, 'Oslo', '59.92595300', '10.75917100', 'Ljudia'),
+(78, 'Thorvald meyers gate 33C,0555', NULL, 'Oslo', '59.92595300', '10.75917100', 'Birken Lunch'),
+(79, 'Thorvald Meyers gate 33b,0555', NULL, 'Oslo', '59.92595300', '10.75917100', 'Tea Lounge'),
+(80, 'Thorvald meyers gate 33C,0555', NULL, 'Oslo', '59.92595300', '10.75917100', 'Café 33'),
+(81, 'Thorvald Meyers gate 30,0555', NULL, 'Oslo', '59.92525100', '10.75919400', 'Los Lobos'),
+(82, 'Thorvald Meyers gate 30,0555', NULL, 'Oslo', '59.92525100', '10.75919400', 'Bar Boca'),
+(83, 'Thorvald Meyers gate 35,0555', NULL, 'Oslo', '59.92522800', '10.75898100', 'McDonalds Grünerløkka'),
+(84, 'Thorvald Meyers gate 32A,0555', NULL, 'Oslo', '59.92479300', '10.75920600', 'Kutt'),
+(85, 'Thorvald Meyers gate 49,0555', NULL, 'Oslo', '59.92396900', '10.75922900', 'Godt Brød (Grünerløkka)'),
+(86, 'Thorvald Meyers gate 51,0555', NULL, 'Oslo', '59.92382000', '10.75923400', 'Carlings løkka'),
+(87, 'Thorvald Meyers gate 55,0555', NULL, 'Oslo', '59.92352300', '10.75924300', 'Kaffebrenneriet løkka'),
+(88, 'Thorvald Meyers gate 59,0552', NULL, 'Oslo', '59.92227900', '10.75926300', 'Ryes'),
+(89, 'Schous Plass', NULL, 'Oslo', '59.92059700', '10.76034700', 'Deichmanske Bibliotek Schous Plass'),
+(90, 'Thorvald Meyers gate 63,0552', NULL, 'Oslo', '59.92190900', '10.75926900', 'Memphis'),
+(91, 'Thorvald Meyers gate 56B,0552', NULL, 'Oslo', '59.92224100', '10.75926400', 'Kaos '),
+(92, 'Thorvald Meyers gate 70A,0552', NULL, 'Oslo', '59.92024200', '10.75931500', 'Calexico'),
+(93, 'Trondheimsveien 5A,0560', NULL, 'Oslo', '59.91826200', '10.76052700', 'Süd Øst'),
+(94, 'Markveien 51,0554', NULL, 'Oslo', '59.92101300', '10.75728100', 'Fretex Grünerløkka'),
+(95, 'Leirfallsgata 6,0550', NULL, 'Oslo', '59.91914700', '10.75765600', 'Bugges'),
+(96, 'Søndre gate 8,0550', NULL, 'Oslo', '59.91866300', '10.75851300', 'Delicatessen'),
+(97, 'Nygata 3,0155', NULL, 'Oslo', '59.91319300', '10.75061100', 'Grim (storgata)'),
+(98, 'Stenersgata 1A,0050', NULL, 'Oslo', '59.91298700', '10.75191600', 'Platekomp. Oslo City'),
+(99, 'Stenersgata 1A,0050', NULL, 'Oslo', '59.91298700', '10.75191600', 'Urban Oslo City'),
+(100, 'Jernbanetorget 6,0154', NULL, 'Oslo', '59.91064100', '10.75008200', 'Platekomp. Byporten'),
+(101, 'Brugata 11,0186', NULL, 'Oslo', '59.91391800', '10.75562800', 'Café Con Bar'),
+(102, 'Brugata 17A,0186', NULL, 'Oslo', '59.91371900', '10.75740700', 'Evita Espressobar Brugata'),
+(103, 'Rubina Ranas gate 3,0190', NULL, 'Oslo', '59.91161700', '10.76289500', 'Vognmand Nilsen'),
+(104, 'Mandalls gate 10,0190', NULL, 'Oslo', '59.91238400', '10.76381700', 'Oscars Restaurant'),
+(105, 'Tøyengata 2,0190', NULL, 'Oslo', '59.91278100', '10.76392000', 'Peppes Grønland'),
+(106, 'Grønland 18,0188', NULL, 'Oslo', '59.91290300', '10.76149500', 'Gloria Flames'),
+(107, 'Grønland 2A,0188', NULL, 'Oslo', '59.91334500', '10.75886000', 'Stargate'),
+(108, 'Karenslyst Allé 16', NULL, 'Oslo', '59.91976900', '10.68517300', 'Baker Hansen Karenslyst Allé'),
+(109, 'Karenslyst Allé 18', NULL, 'Oslo', '59.91996400', '10.68458200', 'Høyer Sjølyst'),
+(110, 'Sjølyst plass 3', NULL, 'Oslo', '59.92005500', '10.68227000', 'Norsk Moteforum'),
+(111, 'Karenslyst Allé 18', NULL, 'Oslo', '59.91996400', '10.68458200', 'Peppes Pizza Skøyen'),
+(112, 'Karenslyst Allé 9', NULL, 'Oslo', '59.92017400', '10.68406500', 'Auster Salonger Skøyen'),
+(113, 'Karenslyst Allé 16', NULL, 'Oslo', '59.91976900', '10.68517300', 'Sats Sjølyst'),
+(114, 'Karenslyst Allé 7', NULL, 'Oslo', '59.91976500', '10.68518800', 'Elixia Sjølyst'),
+(115, 'Henrik Ibsens gate 100', NULL, 'Oslo', '59.91467700', '10.71847000', 'Peppes Pizza Solli Plass'),
+(116, 'Henrik Ibsens gate 90', NULL, 'Oslo', '59.91497400', '10.71992400', 'Consenzo'),
+(117, 'Rosenkrantzgate 22', NULL, 'Oslo', '59.91434100', '10.73940400', 'Smuget'),
+(118, 'Fridtjof Nansens plass 8', NULL, 'Oslo', '59.92985900', '10.71063600', 'Tempest'),
+(119, 'Stortingsgt. 28', NULL, 'Oslo', '59.91448200', '10.73252700', 'Saga Kino'),
+(120, 'Stortingsgaten 22', NULL, 'Oslo', '59.91392500', '10.73481500', 'Bocata Stortingsgaten'),
+(121, 'Stortingsgaten 22', NULL, 'Oslo', '59.91384100', '10.73468600', 'Platekompaniet Stortingsgaten'),
+(122, 'Stortingsgaten 6', NULL, 'Oslo', '59.91309000', '10.73825200', 'Sole Service Stortingsgaten'),
+(123, 'Stranden 1', NULL, 'Oslo', '59.91028600', '10.72855400', 'Hannibals Hybel'),
+(124, 'Stranden 1', NULL, 'Oslo', '59.91028600', '10.72855400', 'Åpen bar'),
+(125, 'Stranden 1', NULL, 'Oslo', '59.91028600', '10.72855400', 'Bar1'),
+(126, 'Aker Brygge', NULL, 'Oslo', '59.90972100', '10.72666700', 'Felix Kino'),
+(127, 'Niels Juels gate 31', NULL, 'Oslo', '59.91422700', '10.71197500', 'Smoothie Xchange Frogner'),
+(128, 'Bygdøy Allé 65', NULL, 'Oslo', '59.91876600', '10.70310600', 'Village Tandoori'),
+(129, 'Bygdøy Allé 5', NULL, 'Oslo', '59.91503100', '10.71626100', 'Hammertson'),
+(130, 'Niels Juels gate 38A', NULL, 'Oslo', '59.91624100', '10.71400700', 'Guess'),
+(131, 'Stortingsgata 28,0161', NULL, 'Oslo', '59.91467300', '10.73265100', 'Kaffebrenneriet (national)'),
+(132, 'Stortingsgata 28', NULL, 'Oslo', '59.91467300', '10.73265100', 'Olapalula'),
+(133, 'Stortingsgata 24,0161', NULL, 'Oslo', '59.91408200', '10.73426800', 'Foxx'),
+(134, 'Stortingsgata 28,0161', NULL, 'Oslo', '59.91467300', '10.73265100', 'Blue Note'),
+(135, 'Olav Vs gate 1', NULL, 'Oslo', '59.91386000', '10.73262900', 'Nichol & son'),
+(136, 'Stortingsgata 22,0161', NULL, 'Oslo', '59.91392500', '10.73481500', 'Bocata'),
+(137, 'Stortingsgata 8', NULL, 'Oslo', '59.91318900', '10.73783900', 'Body Shop'),
+(138, 'Stortingsgata 8,0161', NULL, 'Oslo', '59.91318900', '10.73783900', 'Andy''s Pub'),
+(139, 'Stortingsgata 20,0161', NULL, 'Oslo', '59.91382200', '10.73519800', 'Brasserie 45'),
+(140, 'Stortingsgata 24,0161', NULL, 'Oslo', '59.91408200', '10.73426800', 'Theatercafeen'),
+(141, 'Stortingsgata 20,0161', NULL, 'Oslo', '59.91382200', '10.73519800', 'Steakers'),
+(142, 'Stortingsgata 24,0161', NULL, 'Oslo', '59.91408200', '10.73426800', 'Annen Etage'),
+(143, 'Stortingsgata 20,0161', NULL, 'Oslo', '59.91382200', '10.73519800', 'Baker Hansen (Stortinget)'),
+(144, 'Stranden 3,0250', NULL, 'Oslo', '59.91006100', '10.72800900', 'Carlings (aker brygge)'),
+(145, 'Holmens gate 1', NULL, 'Oslo', '59.91066400', '10.72683800', 'Latter'),
+(146, 'Holmens gate 4,0250', NULL, 'Oslo', '59.91045800', '10.72637200', 'Sinatra'),
+(147, 'Holmens gate 3', NULL, 'Oslo', '59.91044200', '10.72634400', 'Beer Palace'),
+(148, 'Holmens gate 5,0250', NULL, 'Oslo', '59.91025500', '10.72592900', 'Peppes Pizza (Aker Brygge)'),
+(149, 'Stranden 1,0250', NULL, 'Oslo', '59.91028600', '10.72855400', 'Dna'),
+(150, 'Stranden 3,0250', NULL, 'Oslo', '59.91006100', '10.72800900', 'Bianco'),
+(151, 'Stranden 3,0250', NULL, 'Oslo', '59.91006100', '10.72800900', 'Marlboro'),
+(152, 'Bryggetorget 19,0250', NULL, 'Oslo', '59.90994300', '10.72510900', 'Eataly'),
+(153, 'Stranden 3,0250', NULL, 'Oslo', '59.91006100', '10.72800900', 'Olivia'),
+(154, 'Ruseløkkveien 14', NULL, 'Oslo', '59.91351300', '10.72824600', 'Vika kino'),
+(155, 'Solligata 2,0254', NULL, 'Oslo', '59.91438700', '10.72023200', 'Palace Grill'),
+(156, 'Skovveien 4,0257', NULL, 'Oslo', '59.91578700', '10.71568800', 'Hassan & den dama'),
+(157, 'Bygdøy Allé 63A,0265', NULL, 'Oslo', '59.91871600', '10.70342800', 'Clodion'),
+(158, 'Elisenbergveien 22,0265', NULL, 'Oslo', '59.91881600', '10.70606300', 'Cafe Elise'),
+(159, 'Bygdøy allé 18,0262', NULL, 'Oslo', '59.91648100', '10.71138900', 'Marimekko'),
+(160, 'Niels Juels gate 38A,0257', NULL, 'Oslo', '59.91624100', '10.71400700', 'Beth''s'),
+(161, 'Bygdøy Allé 51B,0265', NULL, 'Oslo', '59.91782400', '10.70684000', 'Dugg'),
+(162, 'Frognerveien 58,0266', NULL, 'Oslo', '59.92216100', '10.70494900', 'United Bakeries (Frogner)'),
+(163, 'Eilert Sundts gate 13,0259', NULL, 'Oslo', '59.92112700', '10.71641600', 'Pizza Pancetta'),
+(164, 'Bygdøy Allé 59C,0265', NULL, 'Oslo', '59.91850300', '10.70458100', 'enoteca vinbar'),
+(165, 'Frognerveien 58,0266', NULL, 'Oslo', '59.92216100', '10.70494900', 'Deja vu'),
+(166, 'Karenslyst Allé 16,0278', NULL, 'Oslo', '59.91976900', '10.68517300', 'Baker Hansen (Skøyen)'),
+(167, 'Karenslyst allé 18,0278', NULL, 'Oslo', '59.91996400', '10.68458200', 'Høyer'),
+(168, 'Karenslyst allé 22,0278', NULL, 'Oslo', '59.92023800', '10.68388900', 'Kaffebrenneriet (skøyen)'),
+(169, 'Sjølyst Plass 3,0278', NULL, 'Oslo', '59.92005500', '10.68227000', 'Moteforum'),
+(170, 'Karenslyst allé 18,0278', NULL, 'Oslo', '59.91996400', '10.68458200', 'peppes pizza (skøyen)'),
+(171, 'Karenslyst allé 9,0278', NULL, 'Oslo', '59.92017400', '10.68406500', 'Auster'),
+(172, 'Niels juels gate 40B', NULL, 'Oslo', '59.91652700', '10.71429300', 'Revolver Frisør'),
+(173, 'Skovveien 15', NULL, 'Oslo', '59.91796900', '10.71832000', 'Best Western West Hotel'),
+(174, 'Niels juels gate 31', NULL, 'Oslo', '59.91422700', '10.71197500', 'Forest & Brown'),
+(175, 'Behrens'' gate 2', NULL, 'Oslo', '59.91658400', '10.71677100', 'Pizza Da Mimo'),
+(176, 'Løvenskioldsgt 1', NULL, 'Oslo', '59.91940300', '10.70953200', 'Bjørknes'),
+(177, 'Problemvn 7', NULL, 'Oslo', '59.94015900', '10.72014800', 'A-10 kafeen'),
+(178, 'Tøyen hovedgård Sars gate 1', NULL, 'Oslo', '59.91803000', '10.77041600', 'Botanisk Hage, Tøyen'),
+(179, 'Geitmyrsvn. 71', NULL, 'Oslo', '59.93413200', '10.74337000', 'Odontologikafeen '),
+(180, 'Sognsveien 220', NULL, 'Oslo', '59.96574400', '10.73139500', 'Idrettshøgskolens kafe'),
+(181, 'Slemdalsveien 11', NULL, 'Oslo', '59.93177800', '10.71276400', 'Musikkhøgskolens kafe'),
+(182, 'Ullevålsveien 72', NULL, 'Oslo', '59.93138500', '10.73581600', 'Veterinærhøgskolens kafe'),
+(183, 'Waldemar Thranes gate 25 0171', NULL, 'Oslo', '59.92594100', '10.74549000', 'REMA 1000 Ila (St. haugen Senter)'),
+(184, 'Darres Gate 2', NULL, 'Oslo', '59.92771100', '10.75178400', 'REMA 1000 Darres Gate'),
+(185, 'Sognsveien 218', NULL, 'Oslo', '59.96449700', '10.73416600', 'Kiwi - Kringsjå'),
+(186, 'Frognerveien 54', NULL, 'Oslo', '59.92180300', '10.70525600', 'Kiwi - Frognerveien'),
+(187, 'Solligata 1 0255', NULL, 'Oslo', '59.91415400', '10.71978300', 'Kiwi - Solli Plass'),
+(188, 'Arne Garborgs plass 4', NULL, 'Oslo', '59.91649200', '10.74662400', 'Deichmanske hovedbibliotek'),
+(189, 'Sandakerveien 59', NULL, 'Oslo', '59.93843500', '10.76847300', 'Ica Supermarked Sandaker'),
+(190, 'Akersgata 45 0158', NULL, 'Oslo', '59.91398600', '10.74226000', 'ICA Nær Grensen'),
+(191, 'Theresesgate 16 B', NULL, 'Oslo', '59.92962600', '10.73309600', 'Bunnpris Theresesgate'),
+(192, 'Trondheimsvn. 64', NULL, 'Oslo', '59.92308800', '10.77157700', 'Kiwi - Trondheimsveien'),
+(193, 'Markvn. 35b', NULL, 'Oslo', '59.92173400', '10.75718800', 'Kiwi - Markveien'),
+(194, 'Storgt. 33', NULL, 'Oslo', '59.91461600', '10.75306100', 'Kiwi - Storgata'),
+(195, 'Konowsgate 7', NULL, 'Oslo', '59.90186700', '10.77068200', 'Bunnpris Konowsgt.'),
+(196, 'Pilestredet 31', NULL, 'Oslo', '59.91872400', '10.73658200', 'Bunnpris Pilestredet'),
+(197, 'Dalsbergstien 19, 0170', NULL, 'Oslo', '59.92313400', '10.73284500', 'Coop Mega Bislett'),
+(198, 'Bogstadveien 62, 0366', NULL, 'Oslo', '59.92838700', '10.71652100', 'Coop Bogstadveien'),
+(199, 'Bygdøy Allé 39 0265', NULL, 'Oslo', '59.91724000', '10.70923700', 'Gimle Kino'),
+(200, 'Åsenvn. 2, 1401 Ski', NULL, '', '59.76647900', '10.81923100', 'Ski Kino'),
+(201, 'Bergensgata 28B 0468', NULL, 'Oslo', '59.94424100', '10.75914700', 'Kiwi Bjølsen'),
+(202, 'Waldemar Thranes gate 1 0171', NULL, 'Oslo', '59.92305800', '10.73914400', 'Kiwi Waldemar Thranes'),
+(203, 'Thereses gate 29 0354', NULL, 'Oslo', '59.92821100', '10.73207400', 'Ica Supermarked Theresesgt'),
+(204, 'Frognerveien 8 0257', NULL, 'Oslo', '59.91633600', '10.71489700', 'Ica Supermarked Frogner'),
+(205, 'Thorvald Meyers gate 35 0555', NULL, 'Oslo', '59.92522800', '10.75898100', 'Ica Supermarked Th. Meyersgt.'),
+(206, 'Waldemar Thranes gate 72 0175', NULL, 'Oslo', '59.92821900', '10.75050100', 'Ica Supermarked Kiellands Hus'),
+(207, 'Thurmanns gate 12a 0461', NULL, 'Oslo', '59.93569600', '10.75287600', 'Ica Supermarked Sagene'),
+(208, 'Kongens gate 23 0153', NULL, 'Oslo', '59.91171300', '10.74312500', 'Ica Nær Steen & Strøm'),
+(209, 'Trondheimsveien 72 0565', NULL, 'Oslo', '59.92332800', '10.77204700', 'Rimi Carl Berner'),
+(210, 'Nydalsveien 33 0484', NULL, 'Oslo', '59.94911200', '10.76637500', 'Rimi Nydalen'),
+(211, 'Torggata 2 0181', NULL, 'Oslo', '59.91354800', '10.74672100', 'Rema 1000 Torgata'),
+(212, 'Trondheimsveien 113 0565', NULL, 'Oslo', '59.92666600', '10.77678800', 'Meny Carl Berner'),
+(213, 'Sannergata 6 C 0555', NULL, 'Oslo', '59.92850100', '10.76104800', 'Meny Ringnes Park'),
+(214, 'Smalgangen 49 0188', NULL, 'Oslo', '59.91251800', '10.76191200', 'Meny Grønland Torg'),
+(215, 'Essendropsgt. 9', NULL, 'Oslo', '59.92957700', '10.71164900', 'Centra Colosseum'),
+(216, 'Thorvald Meyers gate 83', NULL, 'Oslo', '59.91972000', '10.75915700', 'Bislet Kebab avd. Grünerløkka'),
+(217, 'Trondheimsveien 139', NULL, 'Oslo', '59.92978300', '10.77821700', 'Bislet Kebab avd. Carl Berner'),
+(218, 'Vitaminveien 7', NULL, 'Oslo', '59.94730000', '10.77379400', 'Ica Supermarked Storo'),
+(219, 'Egertorget', NULL, 'Oslo', '59.91280400', '10.74184400', 'Egertorget'),
+(220, 'Lille Grensen 7', NULL, 'Oslo', '59.91374600', '10.74091200', 'Brighton Pub'),
+(221, 'Vestgrensa 2', NULL, 'Oslo', '59.94079600', '10.72915600', 'Kiwi Trikkesløyfa'),
+(222, 'Trondheimsveien 64', NULL, 'Oslo', '59.92308800', '10.77157700', 'Rimi Trondheimsveien'),
+(223, 'Smalgangen 14', NULL, 'Oslo', '59.91239500', '10.76033400', 'Evita Espressobar Smalgangen'),
+(224, 'Mandallsgata 10', NULL, 'Oslo', '59.91154100', '10.76304100', 'Evita espressobar Mandalls gate'),
+(225, 'Pilestredet 35', NULL, 'Oslo', '59.91957100', '10.73556200', 'Høgskolen i Oslo, Økonomibygget'),
+(226, 'Pilestredet 46', NULL, 'Oslo', '59.92115000', '10.73280800', 'Høgskolen i Oslo, v/buen'),
+(227, 'Maridalsveien 29', NULL, 'Oslo', '59.92481600', '10.75074000', 'Arkitekt og Designhøgskolen i Oslo'),
+(228, 'Maridalsveien 17D', NULL, 'Oslo', '59.92352700', '10.75086500', 'Westerdals Høgskole'),
+(229, 'Karl Johans Gate 8', NULL, 'Oslo', '59.91169400', '10.74694100', 'Burger King Karl Johan'),
+(230, 'Sognsveien 75', NULL, 'Oslo', '59.94875000', '10.73205200', 'Burger King Ullevål'),
+(231, 'Jernbanetorget 1', NULL, 'Oslo', '59.91087000', '10.75073500', 'Burger King Oslo S'),
+(232, 'Valkyriegata 11', NULL, 'Oslo', '59.92911900', '10.71712800', 'Burger King Majorstua'),
+(233, 'vogts gate 48', NULL, 'Oslo', '59.93479500', '10.76448200', 'Mustang Sally'),
+(234, 'Sandakerveien 24', NULL, 'Oslo', '59.93391000', '10.76128400', 'Myrens Sportssenter'),
+(235, 'Sørkedalsveien 1', NULL, 'Oslo', '59.92990100', '10.71332900', 'Saks Frisør, Majorstua'),
+(236, 'Jordalgata 2', NULL, 'Oslo', '59.90834800', '10.77879500', 'Rema 1000 Jordal'),
+(237, 'St. Halvards gate 67', NULL, 'Oslo', '59.90748600', '10.78084200', 'Rimi Jordal'),
+(238, 'Thorvald Meyers Gate 89', NULL, 'Oslo', '59.91879700', '10.75923000', 'Rockmerch Th.Meyersgt.'),
+(239, 'Bogstadveien 3', NULL, 'Oslo', '59.92433200', '10.72515200', 'Urban Bogstadveien'),
+(240, 'Klingenberggata 5', NULL, 'Oslo', '59.91360900', '10.73217400', 'Burger King Klingenberg'),
+(241, 'Karl Johans gate 7', NULL, 'Oslo', '59.91167800', '10.74785600', 'Arkaden Karl Johan'),
+(242, 'Stenersgata 1E', NULL, 'Oslo', '59.91236100', '10.75321200', 'Session Oslo City'),
+(243, 'Kongensgate 23', NULL, 'Oslo', '59.91180400', '10.74335200', 'Emil & Samuel (Steen&Strøm)'),
+(244, 'Pilestredet 55', NULL, 'Oslo', '59.92293200', '10.73184000', 'Kebab Company'),
+(245, 'Jernbanetorget 1', NULL, 'Oslo', '59.91087000', '10.75073500', 'McDonalds Østbanehallen'),
+(246, 'Ruseløkkveien 1', NULL, 'Oslo', '59.91437100', '10.73017100', 'Nationaltheatret Stasjon'),
+(247, 'Akersgata 39', NULL, 'Oslo', '59.91350600', '10.74184700', 'Råkk&Rålls'),
+(248, 'Jernbanetorget 6', NULL, 'Oslo', '59.91177000', '10.75155100', 'Urban Byporten'),
+(249, 'Bjerregaards gate 2', NULL, 'Oslo', '59.92334700', '10.74059300', 'Showtime St.hanshaugen'),
+(250, 'Moltke Moes vei 39', NULL, 'Oslo', '59.93844600', '10.72134300', 'Blindern Georg Bygget'),
+(251, 'Thereses gate 29', NULL, 'Oslo', '59.92821500', '10.73207600', 'Ica Theresesgate'),
+(252, 'Sem Sælands vei 7', NULL, 'Oslo', '59.93853400', '10.71923500', 'Blindern, Helga Engs Hus'),
+(253, 'Moltke Moes vei 31', NULL, 'Oslo', '59.94112800', '10.72587900', 'Blindern, Eiliert Sundts Hus, 2 stativ'),
+(254, 'Bogstadveien 6', NULL, 'Oslo', '59.92439700', '10.72442700', 'Oslo Mikrobryggeri'),
+(255, 'Cecilie Thoresens vei 23', NULL, 'Oslo', '59.87399300', '10.81207300', 'Lambertseter kino'),
+(256, 'Cecilie Thoresens vei 1', NULL, 'Oslo', '59.87927600', '10.80723500', 'Rema 1000 Lambertseter'),
+(257, 'Stortingsgata 14', NULL, 'Oslo', '59.91349000', '10.73633800', 'Ferner Jacobsen, Stort.gaten'),
+(258, 'Jonas Lies gate 4', NULL, '', '59.80014000', '10.81511000', 'Lillestrøm Stasjon'),
+(259, 'Støperiveien 5', NULL, 'Oslo', '59.91119000', '10.72783200', 'Rema Strømmen'),
+(260, 'Storgata 21, 2000 lillestrøm', NULL, 'Oslo', '59.95679100', '11.04772200', 'Burger King Lillestrøm'),
+(261, 'Solheimveien 85', NULL, 'Oslo', '59.92806200', '10.95756200', 'Burger King Lørenskog Metro'),
+(262, 'Stovner Senter 3', NULL, 'Oslo', '59.96214700', '10.92453200', 'Burger King Stovner'),
+(263, 'Støperiveien 5, 2010 strømmen', NULL, 'Oslo', '59.94728500', '11.00733100', 'Burger King Strømmen'),
+(264, 'Trondheimsveien 320', NULL, 'Oslo', '59.94402300', '10.83303900', 'Bislet Kebab Linderud'),
+(265, 'Brøtergata 4c', NULL, 'Oslo', '59.91386800', '10.75224500', 'Lillestrøm Kino'),
+(266, 'Pløens gate 4', NULL, 'Oslo', '59.91422300', '10.74891200', 'Café Mono '),
+(267, 'Universitetsgata 7', NULL, 'Oslo', '59.91722500', '10.73896500', 'Rema 1000 Universitetsgata'),
+(268, 'Nedre Prinsdals vei 77', NULL, 'Oslo', '59.83378200', '10.80762200', 'Bislet Kebab, avd. Prinsdal'),
+(269, 'Sjøskogenveien 7, 1407 vinterbro', NULL, '', '59.73954000', '10.77083900', 'Burger King, Vinterbro'),
+(270, 'Enebakkveien 154B', NULL, 'Oslo', '59.89791100', '10.80302500', 'Rema 1000 Ryen'),
+(271, 'universitetet for miljø og biovitenskap, 1430 ås', NULL, '', '59.66635500', '10.76800700', 'Universitetet for miljø og biovitenskap (UMB) - 3 stativ'),
+(272, 'Claude Monets alle 25, 1338 sandvika', NULL, 'Oslo', '59.88909500', '10.52250600', 'Sandvika Kino'),
+(273, 'Otto Sverdrups Plass 1,1337 Sandvika', NULL, 'Oslo', '59.89216200', '10.52474900', 'Sandvika Stasjon'),
+(274, 'Sandviksveien 183, 1337 Sandvika', NULL, 'Oslo', '59.89268100', '10.53918100', 'Burger King Sandvika Storsenter'),
+(275, 'Karoline Kristiansens Vei 2', NULL, 'Oslo', '59.91430300', '10.79576500', '??Rema 1000 Fyrstikktorget'),
+(276, 'Gladengveien 1', NULL, 'Oslo', '59.91452800', '10.78808500', 'Kiwi Ensjø'),
+(277, 'Hagegata 23, 0653', NULL, 'Oslo', '59.91433300', '10.77447700', 'COOP Tøyen'),
+(278, 'Grenseveien 50', NULL, 'Oslo', '59.92356900', '10.79279400', 'Ica Hasle'),
+(279, 'Biskop Jens Nilssøns gate 5', NULL, 'Oslo', '59.90665800', '10.79561800', 'Rema 1000 Etterstad'),
+(280, 'Drammensveien 305', NULL, 'Oslo', '59.91317000', '10.63823700', 'Joker Lysaker Stasjon'),
+(281, 'Christian Krohgs gate 1', NULL, 'Oslo', '59.91403600', '10.75679400', 'Rema 1000 Christian Kroghs Gate'),
+(282, 'Platous gate 31', NULL, 'Oslo', '59.91048800', '10.76449900', 'Rema 1000 Trelastgården'),
+(283, 'Sandakerveien 24', NULL, 'Oslo', '59.93391000', '10.76128400', 'Rema 1000 Torshov'),
+(284, 'Karenslyst Allé 58', NULL, 'Oslo', '59.92121100', '10.67753500', 'Ica Sjølyst');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rolle`
+--
+
+CREATE TABLE IF NOT EXISTS `rolle` (
+  `rolle` varchar(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`rolle`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `rolle`
+--
+
+INSERT INTO `rolle` (`rolle`) VALUES
+('admin'),
+('bruker');
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `avisrutestopp`
+--
+ALTER TABLE `avisrutestopp`
+  ADD CONSTRAINT `avisrutestopp_ibfk_1` FOREIGN KEY (`avisrutenummer`) REFERENCES `avisrute` (`avisrutenummer`),
+  ADD CONSTRAINT `avisrutestopp_ibfk_2` FOREIGN KEY (`distribusjonspunkt_id`) REFERENCES `distribusjonspunkt` (`distribusjonspunkt_id`);
+
+--
+-- Constraints for table `bruker`
+--
+ALTER TABLE `bruker`
+  ADD CONSTRAINT `bruker_ibfk_1` FOREIGN KEY (`rolle`) REFERENCES `rolle` (`rolle`);
+
+--
+-- Constraints for table `bruker_avisrute`
+--
+ALTER TABLE `bruker_avisrute`
+  ADD CONSTRAINT `bruker_avisrute_ibfk_1` FOREIGN KEY (`avisrutenummer`) REFERENCES `avisrute` (`avisrutenummer`),
+  ADD CONSTRAINT `bruker_avisrute_ibfk_2` FOREIGN KEY (`bruker_id`) REFERENCES `bruker` (`bruker_id`);
+
+--
+-- Constraints for table `distribusjon`
+--
+ALTER TABLE `distribusjon`
+  ADD CONSTRAINT `distribusjon_ibfk_1` FOREIGN KEY (`distribusjonspunkt_id`) REFERENCES `distribusjonspunkt` (`distribusjonspunkt_id`),
+  ADD CONSTRAINT `distribusjon_ibfk_2` FOREIGN KEY (`bruker_id`) REFERENCES `bruker` (`bruker_id`);

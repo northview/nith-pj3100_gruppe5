@@ -1,0 +1,1513 @@
+59.913548
+10.736368
+Ferner Jacobsen
+Stortingsgata 14
+http://www.nattogdag.no/byguide/butikker/561/ferner-jacobsen
+
+59.915833
+10.715661
+Hassan og Den Dama
+Skovveien 4
+http://www.nattogdag.no/byguide/butikker/568/hassan-og-den-dama
+
+59.929745
+10.71048
+Colosseum Kino
+Fridtjof Nansens vei 8
+http://www.nattogdag.no/byguide/kino/595/colosseum-kino
+
+59.913422
+10.732807
+Klingenberg Kino
+Olav V's gate 4
+http://www.nattogdag.no/byguide/kino/604/klingenberg-kino
+
+59.916546
+10.750452
+Arakataka
+Marioboes gate 7
+http://www.nattogdag.no/byguide/restauranter/616/arakataka
+
+59.909939
+10.72521
+Beach Club
+Bryggetorget 14
+http://www.nattogdag.no/byguide/restauranter/618/beach-club
+
+59.912376
+10.764437
+Olympen Mat&Vinhus
+Grønlandsleiret 15
+http://www.nattogdag.no/byguide/restauranter/627/olympen-mat-vinhus
+
+59.927654
+10.759164
+Sult
+Thorvald Meyers gate 26
+http://www.nattogdag.no/byguide/restauranter/635/sult
+
+59.924793
+10.759206
+Aku Aku
+Thorvald Meyersgate 32
+http://www.nattogdag.no/byguide/utesteder/640/aku-aku
+
+59.920761
+10.753087
+Blå
+Brenneriveien 9c
+http://www.nattogdag.no/byguide/utesteder/644/bla
+
+59.91312
+10.760227
+Dattera til Hagen
+Grønland 10
+http://www.nattogdag.no/byguide/utesteder/649/dattera-til-hagen
+
+59.914684
+10.749614
+Internasjonalen
+Youngstorget
+http://www.nattogdag.no/byguide/utesteder/651/internasjonalen
+
+59.911373
+10.761775
+Oslo Mekaniske Verksted
+Tøyenbekken 34
+http://www.nattogdag.no/byguide/utesteder/659/oslo-mekaniske-verksted
+
+59.915817
+10.751048
+Big Dipper
+Torggata 16
+http://www.nattogdag.no/byguide/konsertlokaler/670/big-dipper
+
+59.915825
+10.751034
+Rockefeller
+Torggata 16
+http://www.nattogdag.no/byguide/konsertlokaler/686/rockefeller
+
+59.923759
+10.759235
+Fru Hagen
+Thorvald Meyers gate 40A
+
+59.928543
+10.761604
+Ringen kino
+Sannergata 6
+http://www.nattogdag.no/byguide/kino/855/ringen-kino
+
+59.931435
+10.713316
+BokCaféen (Chateau Neuf)
+Slemdalsveien 7,0369 Oslo
+
+59.931435
+10.713316
+Chateau Neuf
+Slemdalsveien 7,0369 Oslo
+
+59.940758
+10.721574
+Blindern Fredrikke Bygget 3 stativ
+Problemveien 11,0313 Oslo
+
+59.928715
+10.715864
+Gamle Major
+Bogstadveien 66A,0366 Oslo
+
+59.928619
+10.716177
+Jacob Aal
+Bogstadveien 64A,0366 Oslo
+
+59.928539
+10.716473
+Sunpoint
+Bogstadveien 49,0366 Oslo
+
+59.928032
+10.718248
+Baker Hansen
+Bogstadveien 54,0366 Oslo
+
+59.928726
+10.717528
+Café M
+Valkyriegata 9,0366 Oslo
+
+59.927151
+10.72008
+Platekompaniet (bogstaveien)
+Bogstadveien 40A,0366 Oslo
+
+59.926826
+10.720605
+Spagetti
+Bogstadveien 31A,0366 Oslo
+
+59.926289
+10.721477
+The Broker
+Bogstadveien 27,0355 Oslo
+
+59.925682
+10.722431
+Carlings (bogstadveien) 2
+Bogstadveien 22,0355 Oslo
+http://www.nattogdag.no/byguide/butikker/911/carlings-bogstadveien-2
+
+59.925133
+10.725497
+San Leandro (Sporveisgata)
+Sporveisgata 35A,0354 Oslo
+
+59.927353
+10.719765
+Studion Alf
+Bogstadveien 41A,0366 Oslo
+
+59.920746
+10.728536
+Bjørungs
+Parkveien 25,0350 Oslo
+
+59.92115
+10.727658
+Horgans
+Hegdehaugsveien 24,0352 Oslo
+
+59.921635
+10.730283
+Lorrys
+Parkveien 12,0350 Oslo
+
+59.928162
+10.718449
+Kaffebrenneriet (Majorstuen)
+Valkyriegata 3,0366 Oslo
+
+59.920586
+10.729332
+rust
+Hegdehaugsveien 22B,0167 Oslo
+
+59.920578
+10.729327
+Plah
+Hegdehaugsveien 22
+http://www.nattogdag.no/byguide/restauranter/925/plah
+
+59.914974
+10.739912
+Elsker
+Kristian IV's gate 7,0164 Oslo
+
+59.915558
+10.737321
+Tex Burger
+Universitetsgata 20,0162 Oslo
+
+59.914398
+10.72768
+Harry's
+Kronprinsens gate 5,0251 Oslo
+
+59.913151
+10.741454
+Akersgata 35,0158 Oslo
+Akersgata 35,0158 Oslo
+
+59.914242
+10.742353
+Utro Grensen
+Grensen 17,0159 OSLO
+
+59.914288
+10.739346
+Oslo Nye
+Rosenkrantz gate 10,0159 Oslo
+
+59.914974
+10.743747
+Stopp Pressen
+Akersgata 55,0180 Oslo
+
+59.912067
+10.745711
+Carlings Karl Johan
+Karl Johans gate 12A,0154 Oslo
+http://www.nattogdag.no/byguide/butikker/938/carlings-karl-johan
+
+59.912918
+10.743488
+Carlings Megastore
+Nedre slottsgate 12,0157 OSLO
+http://www.nattogdag.no/byguide/butikker/939/carlings-megastore
+
+59.918941
+10.734588
+Tullins
+Tullins gate 2,0166 Oslo
+
+59.914478
+10.739555
+Juristen
+Rosenkrantz gate 1,0159 Oslo
+
+59.918728
+10.736827
+Le Meo Sushi
+Pilestredet 31,0166 Oslo
+
+59.920567
+10.733536
+Curry House
+Hegdehaugsveien 2,0167 Oslo
+
+59.921707
+10.732135
+Bislet Kebab avd. Pilestredet
+Pilestredet 51 b,0350 Oslo
+
+59.921612
+10.732156
+Balkan
+Mauritz Hansens gate 5,0350 Oslo
+
+59.923382
+10.731696
+Sonans Privatgymnas
+Pilestredet 56,0167 Oslo
+
+59.925961
+10.731069
+Store Stå
+Thereses gate 51B,0354 Oslo
+
+59.926319
+10.731262
+Nero
+Thereses gate 47A,0354 Oslo
+
+59.926437
+10.731094
+kims
+Thereses gate 47A,0354 Oslo
+
+59.927654
+10.731979
+Godt Brød (Bislett)
+Thereses gate 33A,0354 Oslo
+
+59.927765
+10.732195
+Bislet Video
+Thereses gate 36,0168 Oslo
+http://www.nattogdag.no/byguide/diverse/952/bislet-video
+
+59.948814
+10.766723
+BI
+Nydalsveien 37, 0484 Oslo
+
+59.948872
+10.76745
+Godt Brød (Nydalen)
+Nydalsveien 33, 0484 Oslo
+
+59.946896
+10.772535
+Pizza og Kinaekspressen
+Vitaminveien 11b 0485
+
+59.939404
+10.773832
+Åpent Bakeri
+Åsengata 42 - 0480 Oslo
+
+59.936764
+10.766567
+Never Mind Sushi
+Vogts gate 68,0477 Oslo
+
+59.936813
+10.766614
+Hair Craft
+Vogts gate 70A,0477 Oslo
+
+59.935722
+10.765609
+Kaffegutta
+Vogts gate 58,0477 Oslo
+
+59.934792
+10.764731
+Dolly Dimples
+Vogts gate 50A,0477 Oslo
+
+59.934792
+10.764731
+Kaffebrenneriet (Torshov)
+Vogts gate 50A,0477 Oslo
+
+59.934189
+10.762151
+Black Gold
+Torshovgata 1A,0476 Oslo
+
+59.933285
+10.767394
+Mr Pizza
+Torshovgata 15A
+
+59.933151
+10.768061
+Trikkestallen
+Torshovgata 33
+
+59.92823
+10.753038
+Ila SATS
+Waldemar thranes gate 73,0175 Oslo
+
+59.927216
+10.761306
+Scorpius
+Schleppegrells gate 16A,0556 Oslo
+
+59.927074
+10.761138
+Naboens Pub
+Toftes gate 30,0556 Oslo
+
+59.925716
+10.76116
+Kafe Tamara
+Toftes gate 50B,0556 Oslo
+
+59.927071
+10.75916
+La Famiglia
+Thorvald Meyers gate 25A,0555 Oslo
+
+59.927292
+10.759159
+Noahs Ark
+Thorvald Meyers gate 23A,0555 Oslo
+
+59.925953
+10.759171
+Ljudia
+Thorvald Meyers gate 33A,0555 Oslo
+
+59.925953
+10.759171
+Birken Lunch
+Thorvald meyers gate 33C,0555 Oslo
+
+59.925953
+10.759171
+Tea Lounge
+Thorvald Meyers gate 33b,0555 Oslo
+
+59.925953
+10.759171
+Café 33
+Thorvald meyers gate 33C,0555 OSLO
+
+59.925251
+10.759194
+Los Lobos
+Thorvald Meyers gate 30,0555 Oslo
+
+59.925251
+10.759194
+Bar Boca
+Thorvald Meyers gate 30,0555 Oslo
+
+59.925228
+10.758981
+McDonalds Grünerløkka
+Thorvald Meyers gate 35,0555 Oslo
+
+59.924793
+10.759206
+Kutt
+Thorvald Meyers gate 32A,0555 Oslo
+
+59.923969
+10.759229
+Godt Brød (Grünerløkka)
+Thorvald Meyers gate 49,0555 Oslo
+
+59.92382
+10.759234
+Carlings løkka
+Thorvald Meyers gate 51,0555 Oslo
+http://www.nattogdag.no/byguide/butikker/990/carlings-lokka
+
+59.923523
+10.759243
+Kaffebrenneriet løkka
+Thorvald Meyers gate 55,0555 Oslo
+
+59.922279
+10.759263
+Ryes
+Thorvald Meyers gate 59,0552 Oslo
+
+59.920597
+10.760347
+Deichmanske Bibliotek Schous Plass
+Schous Plass
+
+59.921909
+10.759269
+Memphis
+Thorvald Meyers gate 63,0552 Oslo
+
+59.922241
+10.759264
+Kaos 
+Thorvald Meyers gate 56B,0552 Oslo
+
+59.920242
+10.759315
+Calexico
+Thorvald Meyers gate 70A,0552 Oslo
+
+59.918262
+10.760527
+Süd Øst
+Trondheimsveien 5A,0560 Oslo
+
+59.921013
+10.757281
+Fretex Grünerløkka
+Markveien 51,0554 Oslo
+
+59.919147
+10.757656
+Bugges
+Leirfallsgata 6,0550 Oslo
+
+59.918663
+10.758513
+Delicatessen
+Søndre gate 8,0550 OSLO
+
+59.913193
+10.750611
+Grim (storgata)
+Nygata 3,0155 Oslo
+
+59.912987
+10.751916
+Platekomp. Oslo City
+Stenersgata 1A,0050 Oslo
+
+59.912987
+10.751916
+Urban Oslo City
+Stenersgata 1A,0050 Oslo
+
+59.910641
+10.750082
+Platekomp. Byporten
+Jernbanetorget 6,0154 Oslo
+
+59.913918
+10.755628
+Café Con Bar
+Brugata 11,0186 Oslo
+
+59.913719
+10.757407
+Evita Espressobar Brugata
+Brugata 17A,0186 Oslo
+http://www.nattogdag.no/byguide/restauranter/1020/evita-espressobar-brugata
+
+59.911617
+10.762895
+Vognmand Nilsen
+Rubina Ranas gate 3,0190 Oslo
+
+59.912384
+10.763817
+Oscars Restaurant
+Mandalls gate 10,0190 Oslo
+
+59.912781
+10.76392
+Peppes Grønland
+Tøyengata 2,0190 OSLO
+
+59.912903
+10.761495
+Gloria Flames
+Grønland 18,0188 Oslo
+http://www.nattogdag.no/byguide/restauranter/1029/gloria-flames
+
+59.913345
+10.75886
+Stargate
+Grønland 2A,0188 Oslo
+
+59.919769
+10.685173
+Baker Hansen Karenslyst Allé
+Karenslyst Allé 16
+
+59.919964
+10.684582
+Høyer Sjølyst
+Karenslyst Allé 18
+
+59.920055
+10.68227
+Norsk Moteforum
+Sjølyst plass 3
+
+59.919964
+10.684582
+Peppes Pizza Skøyen
+Karenslyst Allé 18
+
+59.920174
+10.684065
+Auster Salonger Skøyen
+Karenslyst Allé 9
+
+59.919769
+10.685173
+Sats Sjølyst
+Karenslyst Allé 16
+
+59.919765
+10.685188
+Elixia Sjølyst
+Karenslyst Allé 7
+
+59.914677
+10.71847
+Peppes Pizza Solli Plass
+Henrik Ibsens gate 100
+
+59.914974
+10.719924
+Consenzo
+Henrik Ibsens gate 90
+
+59.914341
+10.739404
+Smuget
+Rosenkrantzgate 22
+
+59.929859
+10.710636
+Tempest
+Fridtjof Nansens plass 8
+
+59.914482
+10.732527
+Saga Kino
+Stortingsgt. 28
+http://www.nattogdag.no/byguide/kino/1048/saga-kino
+
+59.913925
+10.734815
+Bocata Stortingsgaten
+Stortingsgaten 22
+
+59.913841
+10.734686
+Platekompaniet Stortingsgaten
+Stortingsgaten 22
+
+59.91309
+10.738252
+Sole Service Stortingsgaten
+Stortingsgaten 6
+
+59.910286
+10.728554
+Hannibals Hybel
+Stranden 1
+
+59.910286
+10.728554
+Åpen bar
+Stranden 1
+
+59.910286
+10.728554
+Bar1
+Stranden 1
+
+59.909721
+10.726667
+Felix Kino
+Aker Brygge
+
+59.914227
+10.711975
+Smoothie Xchange Frogner
+Niels Juels gate 31
+
+59.918766
+10.703106
+Village Tandoori
+Bygdøy Allé 65
+
+59.915031
+10.716261
+Hammertson
+Bygdøy Allé 5
+
+59.916241
+10.714007
+Guess
+Niels Juels gate 38A
+
+59.914673
+10.732651
+Kaffebrenneriet (national)
+Stortingsgata 28,0161 Oslo
+
+59.914673
+10.732651
+Olapalula
+Stortingsgata 28
+
+59.914082
+10.734268
+Foxx
+Stortingsgata 24,0161 Oslo
+
+59.914673
+10.732651
+Blue Note
+Stortingsgata 28,0161 Oslo
+
+59.91386
+10.732629
+Nichol & son
+Olav Vs gate 1
+
+59.913925
+10.734815
+Bocata
+Stortingsgata 22,0161 Oslo
+
+59.913189
+10.737839
+Body Shop
+Stortingsgata 8
+
+59.913189
+10.737839
+Andy's Pub
+Stortingsgata 8,0161 Oslo
+
+59.913822
+10.735198
+Brasserie 45
+Stortingsgata 20,0161 Oslo
+
+59.914082
+10.734268
+Theatercafeen
+Stortingsgata 24,0161 Oslo
+
+59.913822
+10.735198
+Steakers
+Stortingsgata 20,0161 Oslo
+
+59.914082
+10.734268
+Annen Etage
+Stortingsgata 24,0161 Oslo
+
+59.913822
+10.735198
+Baker Hansen (Stortinget)
+Stortingsgata 20,0161 Oslo
+
+59.910061
+10.728009
+Carlings (aker brygge)
+Stranden 3,0250 Oslo
+
+59.910664
+10.726838
+Latter
+Holmens gate 1
+
+59.910458
+10.726372
+Sinatra
+Holmens gate 4,0250 Oslo
+
+59.910442
+10.726344
+Beer Palace
+Holmens gate 3
+
+59.910255
+10.725929
+Peppes Pizza (Aker Brygge)
+Holmens gate 5,0250 OSLO
+
+59.910286
+10.728554
+Dna
+Stranden 1,0250 Oslo
+
+59.910061
+10.728009
+Bianco
+Stranden 3,0250 Oslo
+
+59.910061
+10.728009
+Marlboro
+Stranden 3,0250 Oslo
+
+59.909943
+10.725109
+Eataly
+Bryggetorget 19,0250 Oslo
+
+59.910061
+10.728009
+Olivia
+Stranden 3,0250 Oslo
+
+59.913513
+10.728246
+Vika kino
+Ruseløkkveien 14
+http://www.nattogdag.no/byguide/kino/1104/vika-kino
+
+59.914387
+10.720232
+Palace Grill
+Solligata 2,0254 Oslo
+
+59.915787
+10.715688
+Hassan & den dama
+Skovveien 4,0257 Oslo
+
+59.918716
+10.703428
+Clodion
+Bygdøy Allé 63A,0265 Oslo
+
+59.918816
+10.706063
+Cafe Elise
+Elisenbergveien 22,0265 Oslo
+
+59.916481
+10.711389
+Marimekko
+Bygdøy allé 18,0262 Oslo
+
+59.916241
+10.714007
+Beth's
+Niels Juels gate 38A,0257 Oslo
+
+59.917824
+10.70684
+Dugg
+Bygdøy Allé 51B,0265 Oslo
+
+59.922161
+10.704949
+United Bakeries (Frogner)
+Frognerveien 58,0266 Oslo
+
+59.921127
+10.716416
+Pizza Pancetta
+Eilert Sundts gate 13,0259 Oslo
+
+59.918503
+10.704581
+enoteca vinbar
+Bygdøy Allé 59C,0265 Oslo
+
+59.922161
+10.704949
+Deja vu
+Frognerveien 58,0266 Oslo
+
+59.919769
+10.685173
+Baker Hansen (Skøyen)
+Karenslyst Allé 16,0278 Oslo
+
+59.919964
+10.684582
+Høyer
+Karenslyst allé 18,0278 Oslo
+
+59.920238
+10.683889
+Kaffebrenneriet (skøyen)
+Karenslyst allé 22,0278 Oslo
+
+59.920055
+10.68227
+Moteforum
+Sjølyst Plass 3,0278 Oslo
+
+59.919964
+10.684582
+peppes pizza (skøyen)
+Karenslyst allé 18,0278 OSLO
+
+59.920174
+10.684065
+Auster
+Karenslyst allé 9,0278 Oslo
+
+59.916527
+10.714293
+Revolver Frisør
+Niels juels gate 40B
+
+59.917969
+10.71832
+Best Western West Hotel
+Skovveien 15
+
+59.914227
+10.711975
+Forest & Brown
+Niels juels gate 31
+
+59.916584
+10.716771
+Pizza Da Mimo
+Behrens' gate 2
+
+59.919403
+10.709532
+Bjørknes
+Løvenskioldsgt 1
+
+59.940159
+10.720148
+A-10 kafeen
+Problemvn 7
+
+59.91803
+10.770416
+Botanisk Hage, Tøyen
+Tøyen hovedgård Sars gate 1
+
+59.934132
+10.74337
+Odontologikafeen 
+Geitmyrsvn. 71
+
+59.965744
+10.731395
+Idrettshøgskolens kafe
+Sognsveien 220
+
+59.931778
+10.712764
+Musikkhøgskolens kafe
+Slemdalsveien 11
+
+59.931385
+10.735816
+Veterinærhøgskolens kafe
+Ullevålsveien 72
+
+59.925941
+10.74549
+REMA 1000 Ila (St. haugen Senter)
+Waldemar Thranes gate 25 0171 Oslo
+http://www.nattogdag.no/byguide/butikker/1327/rema-1000-ila-st-haugen-senter
+
+59.927711
+10.751784
+REMA 1000 Darres Gate
+Darres Gate 2
+http://www.nattogdag.no/byguide/butikker/1328/rema-1000-darres-gate
+
+59.964497
+10.734166
+Kiwi - Kringsjå
+Sognsveien 218
+http://www.nattogdag.no/byguide/butikker/1330/kiwi-kringsja
+
+59.921803
+10.705256
+Kiwi - Frognerveien
+Frognerveien 54
+http://www.nattogdag.no/byguide/butikker/1331/kiwi-frognerveien
+
+59.914154
+10.719783
+Kiwi - Solli Plass
+Solligata 1 0255 OSLO
+http://www.nattogdag.no/byguide/butikker/1333/kiwi-solli-plass
+
+59.916492
+10.746624
+Deichmanske hovedbibliotek
+Arne Garborgs plass 4
+
+59.938435
+10.768473
+Ica Supermarked Sandaker
+Sandakerveien 59
+http://www.nattogdag.no/byguide/butikker/1372/ica-supermarked-sandaker
+
+59.913986
+10.74226
+ICA Nær Grensen
+Akersgata 45 0158 Oslo
+http://www.nattogdag.no/byguide/butikker/1373/ica-naer-grensen
+
+59.929626
+10.733096
+Bunnpris Theresesgate
+Theresesgate 16 B
+http://www.nattogdag.no/byguide/butikker/1374/bunnpris-theresesgate
+
+59.923088
+10.771577
+Kiwi - Trondheimsveien
+Trondheimsvn. 64
+http://www.nattogdag.no/byguide/butikker/1375/kiwi-trondheimsveien
+
+59.921734
+10.757188
+Kiwi - Markveien
+Markvn. 35b
+http://www.nattogdag.no/byguide/butikker/1376/kiwi-markveien
+
+59.914616
+10.753061
+Kiwi - Storgata
+Storgt. 33
+http://www.nattogdag.no/byguide/butikker/1378/kiwi-storgata
+
+59.901867
+10.770682
+Bunnpris Konowsgt.
+Konowsgate 7
+http://www.nattogdag.no/byguide/butikker/1568/bunnpris-konowsgt-1
+
+59.918724
+10.736582
+Bunnpris Pilestredet
+Pilestredet 31
+http://www.nattogdag.no/byguide/butikker/1569/bunnpris-pilestredet
+
+59.923134
+10.732845
+Coop Mega Bislett
+Dalsbergstien 19, 0170 Oslo
+http://www.nattogdag.no/byguide/butikker/1570/coop-mega-bislett
+
+59.928387
+10.716521
+Coop Bogstadveien
+Bogstadveien 62, 0366 Oslo
+http://www.nattogdag.no/byguide/butikker/1572/coop-bogstadveien
+
+59.91724
+10.709237
+Gimle Kino
+Bygdøy Allé 39 0265 Oslo
+http://www.nattogdag.no/byguide/butikker/1573/gimle-kino
+
+59.766479
+10.819231
+Ski Kino
+Åsenvn. 2, 1401 Ski
+http://www.nattogdag.no/byguide/butikker/1574/ski-kino
+
+59.944241
+10.759147
+Kiwi Bjølsen
+Bergensgata 28B 0468 Oslo
+http://www.nattogdag.no/byguide/butikker/1575/kiwi-bjolsen
+
+59.923058
+10.739144
+Kiwi Waldemar Thranes
+Waldemar Thranes gate 1 0171 Oslo
+http://www.nattogdag.no/byguide/butikker/1576/kiwi-waldemar-thranes
+
+59.928211
+10.732074
+Ica Supermarked Theresesgt
+Thereses gate 29 0354 Oslo
+http://www.nattogdag.no/byguide/butikker/1577/ica-supermarked-theresesgt
+
+59.916336
+10.714897
+Ica Supermarked Frogner
+Frognerveien 8 0257 Oslo
+http://www.nattogdag.no/byguide/butikker/1578/ica-supermarked-frogner
+
+59.925228
+10.758981
+Ica Supermarked Th. Meyersgt.
+Thorvald Meyers gate 35 0555 Oslo
+http://www.nattogdag.no/byguide/butikker/1579/ica-supermarked-th-meyersgt
+
+59.928219
+10.750501
+Ica Supermarked Kiellands Hus
+Waldemar Thranes gate 72 0175 Oslo
+http://www.nattogdag.no/byguide/butikker/1580/ica-supermarked-kiellands-hus
+
+59.935696
+10.752876
+Ica Supermarked Sagene
+Thurmanns gate 12a 0461 Oslo
+http://www.nattogdag.no/byguide/butikker/1581/ica-supermarked-sagene
+
+59.911713
+10.743125
+Ica Nær Steen & Strøm
+Kongens gate 23 0153 Oslo
+http://www.nattogdag.no/byguide/butikker/1582/ica-naer-steen-strom
+
+59.923328
+10.772047
+Rimi Carl Berner
+Trondheimsveien 72 0565 Oslo
+http://www.nattogdag.no/byguide/butikker/1584/rimi-carl-berner
+
+59.949112
+10.766375
+Rimi Nydalen
+Nydalsveien 33 0484 Oslo
+http://www.nattogdag.no/byguide/butikker/1585/rimi-nydalen
+
+59.913548
+10.746721
+Rema 1000 Torgata
+Torggata 2 0181 Oslo
+http://www.nattogdag.no/byguide/butikker/1587/rema-1000-torgata
+
+59.926666
+10.776788
+Meny Carl Berner
+Trondheimsveien 113 0565 Oslo
+http://www.nattogdag.no/byguide/butikker/1590/meny-carl-berner
+
+59.928501
+10.761048
+Meny Ringnes Park
+Sannergata 6 C 0555  OSLO
+http://www.nattogdag.no/byguide/butikker/1591/meny-ringnes-park
+
+59.912518
+10.761912
+Meny Grønland Torg
+Smalgangen 49 0188 Oslo
+http://www.nattogdag.no/byguide/butikker/1592/meny-gronland-torg
+
+59.929577
+10.711649
+Centra Colosseum
+Essendropsgt. 9
+http://www.nattogdag.no/byguide/butikker/1740/centra-colosseum
+
+59.91972
+10.759157
+Bislet Kebab avd. Grünerløkka
+Thorvald Meyers gate 83
+http://www.nattogdag.no/byguide/butikker/1741/bislet-kebab-avd-gruenerlokka
+
+59.929783
+10.778217
+Bislet Kebab avd. Carl Berner
+Trondheimsveien 139
+http://www.nattogdag.no/byguide/butikker/1742/bislet-kebab-avd-carl-berner
+
+59.9473
+10.773794
+Ica Supermarked Storo
+Vitaminveien 7
+http://www.nattogdag.no/byguide/butikker/1743/ica-supermarked-storo
+
+59.912804
+10.741844
+Egertorget
+Egertorget
+http://www.nattogdag.no/byguide/butikker/1744/egertorget
+
+59.913746
+10.740912
+Brighton Pub
+Lille Grensen 7
+http://www.nattogdag.no/byguide/butikker/1745/brighton-pub
+
+59.940796
+10.729156
+Kiwi Trikkesløyfa
+Vestgrensa 2
+http://www.nattogdag.no/byguide/butikker/1746/kiwi-trikkesloyfa
+
+59.923088
+10.771577
+Rimi Trondheimsveien
+Trondheimsveien 64
+http://www.nattogdag.no/byguide/butikker/1747/rimi-trondheimsveien
+
+59.912395
+10.760334
+Evita Espressobar Smalgangen
+Smalgangen 14
+http://www.nattogdag.no/byguide/butikker/1748/evita-espressobar-smalgangen
+
+59.911541
+10.763041
+Evita espressobar Mandalls gate
+Mandallsgata 10
+http://www.nattogdag.no/byguide/butikker/1749/evita-espressobar-mandalls-gate
+
+59.919571
+10.735562
+Høgskolen i Oslo, Økonomibygget
+Pilestredet 35
+http://www.nattogdag.no/byguide/butikker/1750/hogskolen-i-oslo-okonomibygget
+
+59.92115
+10.732808
+Høgskolen i Oslo, v/buen
+Pilestredet 46
+
+59.924816
+10.75074
+Arkitekt og Designhøgskolen i Oslo
+Maridalsveien 29
+http://www.nattogdag.no/byguide/butikker/1752/arkitekt-og-designhogskolen-i-oslo
+
+59.923527
+10.750865
+Westerdals Høgskole
+Maridalsveien 17D
+http://www.nattogdag.no/byguide/butikker/1753/westerdals-hogskole
+
+59.911694
+10.746941
+Burger King Karl Johan
+Karl Johans Gate 8
+http://www.nattogdag.no/byguide/butikker/1754/burger-king-karl-johan
+
+59.94875
+10.732052
+Burger King Ullevål
+Sognsveien 75
+http://www.nattogdag.no/byguide/butikker/1755/burger-king-ulleval
+
+59.91087
+10.750735
+Burger King Oslo S
+Jernbanetorget 1
+http://www.nattogdag.no/byguide/butikker/1756/burger-king-oslo-s
+
+59.929119
+10.717128
+Burger King Majorstua
+Valkyriegata 11
+http://www.nattogdag.no/byguide/butikker/1757/burger-king-majorstua
+
+59.934795
+10.764482
+Mustang Sally
+vogts gate 48
+http://www.nattogdag.no/byguide/butikker/1758/mustang-sally
+
+59.93391
+10.761284
+Myrens Sportssenter
+Sandakerveien 24
+http://www.nattogdag.no/byguide/butikker/1759/myrens-sportssenter
+
+59.929901
+10.713329
+Saks Frisør, Majorstua
+Sørkedalsveien 1
+http://www.nattogdag.no/byguide/butikker/1760/saks-frisor-majorstua
+
+59.908348
+10.778795
+Rema 1000 Jordal
+Jordalgata 2
+http://www.nattogdag.no/byguide/butikker/1761/rema-1000-jordal
+
+59.907486
+10.780842
+Rimi Jordal
+St. Halvards gate 67
+http://www.nattogdag.no/byguide/butikker/1762/rimi-jordal
+
+59.918797
+10.75923
+Rockmerch Th.Meyersgt.
+Thorvald Meyers Gate 89
+http://www.nattogdag.no/byguide/butikker/1763/rockmerch-th-meyersgt
+
+59.924332
+10.725152
+Urban Bogstadveien
+Bogstadveien 3
+http://www.nattogdag.no/byguide/butikker/1764/urban-bogstadveien
+
+59.913609
+10.732174
+Burger King Klingenberg
+Klingenberggata 5
+http://www.nattogdag.no/byguide/butikker/1765/burger-king-klingenberg
+
+59.911678
+10.747856
+Arkaden Karl Johan
+Karl Johans gate 7
+http://www.nattogdag.no/byguide/butikker/1766/arkaden-karl-johan
+
+59.912361
+10.753212
+Session Oslo City
+Stenersgata 1E
+http://www.nattogdag.no/byguide/butikker/1767/session-oslo-city
+
+59.911804
+10.743352
+Emil & Samuel (Steen&Strøm)
+Kongensgate 23
+http://www.nattogdag.no/byguide/butikker/1768/emil-samuel-steen-strom
+
+59.922932
+10.73184
+Kebab Company
+Pilestredet 55
+http://www.nattogdag.no/byguide/butikker/1769/kebab-company
+
+59.91087
+10.750735
+McDonalds Østbanehallen
+Jernbanetorget 1
+http://www.nattogdag.no/byguide/butikker/1770/mcdonalds-ostbanehallen
+
+59.914371
+10.730171
+Nationaltheatret Stasjon
+Ruseløkkveien 1
+http://www.nattogdag.no/byguide/butikker/1771/nationaltheatret-stasjon
+
+59.913506
+10.741847
+Råkk&Rålls
+Akersgata 39
+http://www.nattogdag.no/byguide/butikker/1772/rakk-ralls-1
+
+59.91177
+10.751551
+Urban Byporten
+Jernbanetorget 6
+http://www.nattogdag.no/byguide/butikker/1773/urban-byporten-1
+
+59.923347
+10.740593
+Showtime St.hanshaugen
+Bjerregaards gate 2
+http://www.nattogdag.no/byguide/butikker/1774/showtime-st-hanshaugen
+
+59.938446
+10.721343
+Blindern Georg Bygget
+Moltke Moes vei 39
+
+59.928215
+10.732076
+Ica Theresesgate
+Thereses gate 29
+
+59.938534
+10.719235
+Blindern, Helga Engs Hus
+Sem Sælands vei 7
+
+59.941128
+10.725879
+Blindern, Eiliert Sundts Hus, 2 stativ
+Moltke Moes vei 31
+
+59.924397
+10.724427
+Oslo Mikrobryggeri
+Bogstadveien 6
+
+59.873993
+10.812073
+Lambertseter kino
+Cecilie Thoresens vei 23
+
+59.879276
+10.807235
+Rema 1000 Lambertseter
+Cecilie Thoresens vei 1
+
+59.91349
+10.736338
+Ferner Jacobsen, Stort.gaten
+Stortingsgata 14
+
+59.80014
+10.81511
+Lillestrøm Stasjon
+Jonas Lies gate 4
+
+59.91119
+10.727832
+Rema Strømmen
+Støperiveien 5
+
+59.956791
+11.047722
+Burger King Lillestrøm
+Storgata 21, 2000 lillestrøm
+
+59.928062
+10.957562
+Burger King Lørenskog Metro
+Solheimveien 85
+
+59.962147
+10.924532
+Burger King Stovner
+Stovner Senter 3
+
+59.947285
+11.007331
+Burger King Strømmen
+Støperiveien 5, 2010 strømmen
+
+59.944023
+10.833039
+Bislet Kebab Linderud
+Trondheimsveien 320
+
+59.913868
+10.752245
+Lillestrøm Kino
+Brøtergata 4c
+
+59.914223
+10.748912
+Café Mono 
+Pløens gate 4
+
+59.917225
+10.738965
+Rema 1000 Universitetsgata
+Universitetsgata 7
+
+59.833782
+10.807622
+Bislet Kebab, avd. Prinsdal
+Nedre Prinsdals vei 77
+
+59.73954
+10.770839
+Burger King, Vinterbro
+Sjøskogenveien 7, 1407 vinterbro
+
+59.897911
+10.803025
+Rema 1000 Ryen
+Enebakkveien 154B
+
+59.666355
+10.768007
+Universitetet for miljø og biovitenskap (UMB) - 3 stativ
+universitetet for miljø og biovitenskap, 1430 ås
+
+59.889095
+10.522506
+Sandvika Kino
+Claude Monets alle 25, 1338 sandvika
+
+59.892162
+10.524749
+Sandvika Stasjon
+Otto Sverdrups Plass 1,1337 Sandvika
+
+59.892681
+10.539181
+Burger King Sandvika Storsenter
+Sandviksveien 183, 1337 Sandvika
+
+59.914303
+10.795765
+??Rema 1000 Fyrstikktorget
+Karoline Kristiansens Vei 2
+
+59.914528
+10.788085
+Kiwi Ensjø
+Gladengveien 1
+
+59.914333
+10.774477
+COOP Tøyen
+Hagegata 23, 0653 Oslo
+
+59.923569
+10.792794
+Ica Hasle
+Grenseveien 50
+
+59.906658
+10.795618
+Rema 1000 Etterstad
+Biskop Jens Nilssøns gate 5
+
+59.91317
+10.638237
+Joker Lysaker Stasjon
+Drammensveien 305
+
+59.914036
+10.756794
+Rema 1000 Christian Kroghs Gate
+Christian Krohgs gate 1
+
+59.910488
+10.764499
+Rema 1000 Trelastgården
+Platous gate 31
+
+59.93391
+10.761284
+Rema 1000 Torshov
+Sandakerveien 24
+http://www.nattogdag.no/byguide/butikker/1824/rema-1000-torshov-1
+
+59.921211
+10.677535
+Ica Sjølyst
+Karenslyst Allé 58
+http://www.nattogdag.no/byguide/butikker/1825/ica-sjolyst
+

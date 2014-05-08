@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <fragment
+        class="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment"/>
+
+    <Button
+        android:id="@+id/ruteinfo"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:alpha=".70"
+        android:background="@color/ndblue"
+        android:textColor="@color/white"
+        android:text="@string/ruteinfo" />
+
+    <Button
+        android:id="@+id/tilbake"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ruteinfo"
+        android:layout_alignBottom="@+id/ruteinfo"
+        android:layout_marginRight="16dp"
+        android:alpha=".70"
+        android:background="@color/ndblue"
+        android:textColor="@color/white"
+        android:layout_toLeftOf="@+id/ruteinfo"
+        android:text="@string/tilbake" />
+
+</RelativeLayout>

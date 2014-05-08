@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/start_rute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTilbake"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@color/ndblue"
+        android:textColor="@color/white"
+        android:text="@string/start_rute"
+        android:width="120dp" />
+
+    <Button
+        android:id="@+id/btnTilbake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:background="@color/ndblue"
+        android:text="@string/tilbake"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/velg_rute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/velg_by"
+        android:layout_below="@+id/velg_by"
+        android:layout_marginTop="52dp"
+        android:height="60dp"
+        android:background="@color/ndblue"
+        android:textColor="@color/white"
+        android:text="@string/velg_rute"
+        android:width="200dp" />
+
+    <Button
+        android:id="@+id/velg_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:height="60dp"
+        android:background="@color/ndblue"
+        android:textColor="@color/white"
+        android:text="@string/velg_by"
+        android:width="200dp" />
+
+</RelativeLayout>

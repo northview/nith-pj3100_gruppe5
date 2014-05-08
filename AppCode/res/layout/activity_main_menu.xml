@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/finn_rute"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/min_konto"
+        android:layout_below="@+id/mine_ruter"
+        android:layout_marginTop="60dp"
+        android:background="@color/ndblue"
+        android:text="@string/finn_rute"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/logg_ut"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@color/ndblue"
+        android:text="@string/logg_ut"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/mine_ruter"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/finn_rute"
+        android:layout_below="@+id/min_konto"
+        android:layout_marginTop="60dp"
+        android:background="@color/ndblue"
+        android:text="@string/mine_ruter"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/min_konto"
+        android:src="@drawable/user_ny" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_above="@+id/finn_rute"
+        android:layout_toRightOf="@+id/min_konto"
+        android:background="@color/black"
+        android:src="@drawable/location_map" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignTop="@+id/finn_rute"
+        android:src="@drawable/magnifying_glass_new" />
+
+    <Button
+        android:id="@+id/min_konto"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/logg_ut"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/ndblue"
+        android:text="@string/min_konto"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

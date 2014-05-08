@@ -1,0 +1,5 @@
+https://nattogdagprosjekt-nith.rhcloud.com/NattogDag/JsonServlet?user=petter85&password=nattogdag&command=getMarkers
+https://nattogdagprosjekt-nith.rhcloud.com/NattogDag/JsonServlet?user=petter85&password=nattogdag&command=getRoute
+https://nattogdagprosjekt-nith.rhcloud.com/NattogDag/JsonServlet?user=petter85&password=nattogdag&command=getAuthentication
+
+"C:\Ole\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\platforms\android-19\data\res\drawable-xxhdpi\ic_menu_settings_holo_light.png"
